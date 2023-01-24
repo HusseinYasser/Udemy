@@ -1,0 +1,497 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    font-family: udemy sans,sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+}
+
+
+/* navbar */
+.navbar 
+{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 2px 4px #00000014, 0 4px 12px #00000014;
+}
+
+.burger-icon
+{
+    font-size: 20px;
+}
+
+.nav-icon{
+    width: 6rem;
+    margin-left: 45%;
+}
+
+.navImgHolder{
+    width: 80%;
+}
+
+
+.search2
+{
+    display: none;
+    border-width: 1px;
+    border-radius: 50px;
+    width: 45%;
+    height: 3rem;
+    padding-left: 2rem;
+}
+
+.btnn{
+    display: none;
+    width: 6rem;
+    border-radius: 0;
+    background-color: white;
+    border: 1px solid black;
+    height: 42px;
+    font-weight: bold;
+}
+
+
+.btn2
+{
+    display: none;
+    width: 6rem;
+    background-color: #2B2929;
+    color: white;
+    height: 42px;
+    font-weight: bold;
+    border: none;
+}
+
+.tab{
+    display: none;
+}
+
+@media screen and (min-width: 900px) {
+    .burger-icon{
+        display: none;
+    }
+    .navImgHolder{
+        width: fit-content;
+    }
+    .search2{
+        display:block;
+    }
+    .btnn {
+        display: inline;
+    }
+    .btn2{
+        display: inline;
+    }
+
+    .tab
+    {
+        display: block;
+    }
+
+    .nav-icon{
+        margin-left: 0;
+    }
+}
+
+.btnn:hover
+{
+    background-color:lightgray;
+}
+.btn2:hover{
+    background-color: black;
+}
+
+
+@media screen and (min-width : 900px) and (max-width : 1200px) {
+    .specialTab
+    {
+        display: none;
+    }
+    .search2
+    {
+        width: 37%;
+    }
+}
+
+@media screen and (min-width : 900px) and (max-width : 1300px) {
+    .search2
+    {
+        width: 37%;
+    }
+}
+
+/* Main Section */
+
+.heroMain
+{
+    width: 80rem;
+    height: 25rem;
+    margin : auto;
+    margin-top:0px;
+    background-image: url(https://img-c.udemycdn.com/notices/web_banner/slide_2_image_udlite/e6cc1a30-2dec-4dc5-b0f2-c5b656909d5b.jpg);
+    background-size:auto;
+    background-repeat: no-repeat;
+    margin-bottom: 2rem;
+}
+
+.heroMainCard
+{
+    position:relative;
+    width: 35rem;
+    height: 7rem;
+    top:4rem;
+    background-color: white;
+    left:5rem;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+}
+
+@media screen and (max-width : 1200px)
+{
+    .heroMain{
+        width: 100%;
+        background-size: contain;
+    }
+    .heroMainCard
+    {
+        width:30%;
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width : 1200px)
+{
+    .heroMain{
+        width: 100%;
+        background-size: contain;
+    }
+}
+
+@media screen and (max-width : 800px)
+{
+    .heroMainCard
+    {
+        left:0%;
+        width: 100%;
+        width:35rem;
+        top:40%;
+    }
+
+    .heroMain
+    {
+        width: 100%;
+        background-size:contain;
+        height: 15rem;
+
+    }
+}
+
+/* Course Section */
+
+.course-section
+{
+    padding-left: 13%;
+
+    margin-bottom: 8rem;
+}
+
+.course-subject-list
+{
+    display: flex;
+    flex-wrap: wrap;
+    width:fit-content;
+    gap:1rem;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0%;
+}
+
+.course-subject-list li
+{
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -.02rem;
+    font-size: 1rem;
+    color: #6a6f73;
+}
+
+.course-subject-list li:hover
+{
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1300px) {
+    .course-section
+    {
+        padding-left: 1rem;
+    }
+    
+}
+
+@media screen and (max-width:890px)
+{
+    .course-subject-list {
+        width: 100%;
+    }
+}
+
+.courses-holder
+{
+    border: 0.5px solid;
+    left: 10%;
+    width: 90rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.course-card
+{
+    max-width: 18%;
+    margin: auto;
+}
+
+.course-title
+{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.course-title:hover
+{
+    color: #8710D8;
+    cursor: pointer;
+}
+
+.course-instructor
+{
+    font-size: 0.8rem;
+    color:#9b9b9b;
+}
+
+.course-rating
+{
+    color: rgb(163, 114, 41);
+
+}
+
+.course-price
+{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.course-img
+{
+    width: 100%;
+}
+
+
+/* Featured topics by Category */
+
+
+.featured-topics
+{
+    background-color: #F7F9FA;
+
+    padding-top: 2rem;
+
+    margin-bottom: 5rem;
+}
+
+.cat-list
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+    left:13%;
+    width: 60%;
+}
+
+.topic-category ul
+{
+    padding-left: 0;
+}
+
+.topic-category .categ-style
+{
+    margin-bottom: 0.5rem;
+}
+
+.topic-category li
+{
+    margin-bottom: 2rem;
+}
+
+.categ-style
+{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #8710D8;
+    text-decoration: underline;
+}
+
+.categ-stats
+{
+    color: #6a6f73;
+}
+
+
+/* Become instructor Part */
+
+.udemy-business{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60rem;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+
+.udemy-business li{
+    margin-bottom: 1rem;
+}
+
+.business-img
+{
+    width:25rem;
+    height:25rem;
+}
+
+.instructor-img{
+
+    width:25rem;
+    height:25rem;
+}
+
+
+.become-instructor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:60rem;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+
+@media screen and (max-width:1000px) {
+
+    .udemy-business{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: 20%;
+    }
+
+    .business-img
+    {
+        width:30rem;
+        height: 30rem;
+    }
+
+    .instructor-img
+    {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .become-instructor
+    {
+        flex-direction: column;
+        margin-left: 20%;
+    }
+}
+
+/* footer */
+footer{
+    height: 18rem;
+    background-color: #1C1D1F;
+    padding : 0% 0%;
+    padding: 2rem;
+}
+
+footer ul{
+    list-style: none;
+
+    padding: 0 0;
+}
+
+footer li{
+    color: white;
+
+    font-size:0.9rem;
+
+    margin-bottom: 0.5rem;
+
+}
+
+footer li:hover{
+
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.footer-lists
+{
+    width:50rem;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+}
+
+.footer-holder
+{
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+
+.footer-btn
+{
+    width: 8rem;
+    height: 2.5rem;
+    border: 1px solid white;
+    color: white;
+    background-color: #1C1D1F;
+    margin-right: 2rem;
+}
+
+@media screen and (max-width:730px)
+{
+    .footer-holder
+    {
+        flex-direction: column-reverse;
+    }
+    .footer-lists
+    {
+        width: fit-content;
+        flex-direction: column;
+    }
+
+    footer{
+        height: fit-content;
+    }
+
+    .footer-btn
+    {
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
